@@ -10,7 +10,7 @@ element.innerHTML = "Text Changed...";
 var img = document.getElementById('madi');
 
 function moveRight() {
-    var marginLeft;
+    var marginLeft = 0;
     marginLeft = marginLeft + 1;
     img.style.marginLeft = marginLeft + 'px';
 }
