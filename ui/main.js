@@ -10,8 +10,10 @@ element.innerHTML = "Text Changed...";
 var img = document.getElementById('madi');
 var marginLeft = 0;
 function moveRight() {
-    marginLeft = marginLeft + 5;
-    img.style.marginLeft = marginLeft + 'px';
+    do {
+        marginLeft = marginLeft + 5;
+        img.style.marginLeft = marginLeft + 'px';
+    }while(marginLeft < max-width);
 }
 img.onclick = function () { //this is a nameless fucntion which also works
     var interval = setInterval(moveRight, 100);
