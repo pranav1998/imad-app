@@ -9,6 +9,11 @@ element.innerHTML = "Text Changed...";
 //Move the madi png image
 var img = document.getElementById('madi');
 
+function moveRight() {
+    marginLeft = marginLeft + 1;
+    img.style.marginLeft = marginLeft + 'px';
+}
 img.onclick = function () { //this is a nameless fucntion which also works
-    img.style.marginLeft = '100px';
+    var interval = setInterval(moveRight, 50);
+    //img.style.marginLeft = '100px';
 };
