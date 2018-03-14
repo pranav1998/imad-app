@@ -81,11 +81,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:pranav', function (req, res) {
+app.get('/:articleName', function (req, res) {
+    // can use any name in place of articleName maybe pranav
     // articleName == article-one
     //articles[articleName] == {} content object for article one
-    var pranav = req.params.pranav;
-    res.send(createTemplate(articles[pranav]));
+    var pranav = req.params.articleName;
+    res.send(createTemplate(articles[artileName]));
 });
 /*app.get('/article-one', function (req, res) {
     //res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
