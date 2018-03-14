@@ -13,7 +13,7 @@ function moveRight() {
     do {
         marginLeft = marginLeft + 5;
         img.style.marginLeft = marginLeft + 'px';
-    }while(marginLeft < 1000);
+    }while(marginLeft < 200);
 }
 img.onclick = function () { //this is a nameless fucntion which also works
     var interval = setInterval(moveRight, 100);
