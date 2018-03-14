@@ -5,16 +5,15 @@ function ChangeMainText() {
 var element = document.getElementById('main-text');
 element.innerHTML = "Text Changed...";
 }
-var element = document.getElementById('main-text');
+
 //Move the madi png image
 var img = document.getElementById('madi');
 var marginLeft = 0;
 function moveRight() {
-    var value = element.style.max-width;
     do {
         marginLeft = marginLeft + 5;
         img.style.marginLeft = marginLeft + 'px';
-    }while(marginLeft < value);
+    }while(marginLeft < 1000);
 }
 img.onclick = function () { //this is a nameless fucntion which also works
     var interval = setInterval(moveRight, 100);
